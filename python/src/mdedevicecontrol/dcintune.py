@@ -1578,6 +1578,7 @@ class Package:
                 if policy.name in self.metadata["policies"]:
                     logger.debug("Updating last_update on current metadata.")
                     self.metadata["policies"][policy.name]["last_update"] = now
+                    self.metadata["policies"][policy.name]["id"] = policy.id
                 else: 
                     self.metadata["policies"][policy.name] = {
                         "id": policy.id,
@@ -2224,6 +2225,10 @@ class Package:
                     group = metadata_for_policy["groups"][group_name]
                     if "id" in group and "@odata.context" in group:
                         logger.debug("group @odata.context="+group["@odata.context"])
+
+                        #see if the group exists
+                        group_details = await graph.get_group_details(group["id"])
+
                         group_result = await graph.delete_group_v2(group["id"])
                         if isinstance(group_result,ODataError):
                             result.addResultForGroup(group_result,group_name)

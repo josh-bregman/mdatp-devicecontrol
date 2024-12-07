@@ -9,15 +9,15 @@
                     "Allowed USBs": {
                          "description": "",
                          "file": {
-                              "path": "windows/devicecontrol/groups/Allowed USBs.xml",
-                              "sha256": "84114bffb854bc781ab2388fd9c9f8200108044af3cba3b40b3fc87c3f9c7cb8"
+                              "path": "windows\\devicecontrol\\groups\\Allowed USBs.xml",
+                              "sha256": "c1828f39865dedbfa56e5e3b00284ce7236b2ecce055d6f33ffe7cd35386a476"
                          }
                     },
                     "All Removable Media Devices": {
                          "description": "",
                          "file": {
-                              "path": "windows/devicecontrol/groups/All Removable Media Devices.xml",
-                              "sha256": "9e8156075ec124d40d609e7e3efba136fe31ce7d252d4c87173e05611171553f"
+                              "path": "windows\\devicecontrol\\groups\\All Removable Media Devices.xml",
+                              "sha256": "c7b9ec0416995d82f02a8e8170d32b03e51fbd056d98be36a4ed229a4004b160"
                          }
                     }
                },
@@ -25,15 +25,15 @@
                     "Allow access to allowed USBs": {
                          "description": "Allow full access and audit write",
                          "file": {
-                              "path": "windows/devicecontrol/rules/Allow access to allowed USBs.xml",
-                              "sha256": "cbaf468ec49e92c35f08323227dec33533a25b7c0200f8da2de8f4e0cf14fc3f"
+                              "path": "windows\\devicecontrol\\rules\\Allow access to allowed USBs.xml",
+                              "sha256": "fcc478f79a9f50ae552a0da8471b130de8fc669ce50fce91f52bfdbaefc7cc05"
                          }
                     },
                     "Deny access to all non-approved devices": {
                          "description": "deny, audit and block",
                          "file": {
-                              "path": "windows/devicecontrol/rules/Deny access to all non-approved devices.xml",
-                              "sha256": "178b3e8248472e7d6296f9cd107621d4732a415e1d1cd430ab53dbf99547307b"
+                              "path": "windows\\devicecontrol\\rules\\Deny access to all non-approved devices.xml",
+                              "sha256": "4dc5e5171cb7bd7174d10a0e5a69c79c6b9fecd2c621e368a6ec0aca4da977c1"
                          }
                     }
                },

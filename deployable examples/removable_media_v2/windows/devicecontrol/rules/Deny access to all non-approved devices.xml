@@ -7,12 +7,12 @@
 		<ExcludedIdList>
 			<GroupId>{5e233630-f613-483a-92d9-290d44b84ca2}</GroupId>
 		</ExcludedIdList>
-		<Entry Id="{69f48608-0272-465b-81cc-ed63d56f84fa}">
+		<Entry Id="{6527e180-415b-4a8f-96ac-c07db4b1267a}">
 			<Type>Deny</Type>
 			<AccessMask>7</AccessMask>
 			<Options>0</Options>
 		</Entry>
-		<Entry Id="{5612f935-3175-48bb-ab49-cc2c811ad3b9}">
+		<Entry Id="{da890c85-c193-40c8-a065-3e624c09b2c5}">
 			<Type>AuditDenied</Type>
 			<AccessMask>7</AccessMask>
 			<Options>3</Options>

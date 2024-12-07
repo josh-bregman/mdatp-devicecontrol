@@ -1,0 +1,360 @@
+{
+    "description": "A policy",
+    "name": "Removable Media Example v2",
+    "platforms": "windows10",
+    "roleScopeTagIds": [
+        "0"
+    ],
+    "settings": [
+        {
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+                "settingInstanceTemplateReference": {
+                    "settingInstanceTemplateId": "a5c5409c-886a-4909-81c7-28156aee9419"
+                },
+                "groupSettingCollectionValue": [
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_id",
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "value": "{6386d325-ae35-470e-b164-2f301dad4ac7}"
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "value": "Allow access to allowed USBs"
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist",
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist_groupid",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationReferenceSettingValue",
+                                                                    "value": "23698e3d-ea32-4655-ad7a-be3138ed3276"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+                                                                "choiceSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                    "children": [
+                                                                        {
+                                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                            "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                                                                            "choiceSettingValue": {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                "children": [],
+                                                                                "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_0"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_allow"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+                                                                "choiceSettingCollectionValue": [
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_1"
+                                                                    },
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_2"
+                                                                    },
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_4"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "value": "{6f9df57a-aadb-4b41-9e35-3634dc3857e6}"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+                                                                "choiceSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                    "children": [
+                                                                        {
+                                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                            "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                                                                            "choiceSettingValue": {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                "children": [],
+                                                                                "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_2"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditallowed"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+                                                                "choiceSettingCollectionValue": [
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_2"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "value": "{6f9df57a-aadb-4b41-9e35-3634dc3857e6}"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_id",
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "value": "{0632485f-12e0-491a-b9f4-1d8ca7d555a3}"
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "value": "Deny access to all non-approved devices"
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist",
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist_groupid",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationReferenceSettingValue",
+                                                                    "value": "d1f600f9-387b-41e5-a5fa-e4d5a39166fb"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist",
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist_groupid",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationReferenceSettingValue",
+                                                                    "value": "23698e3d-ea32-4655-ad7a-be3138ed3276"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+                                                                "choiceSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                    "children": [
+                                                                        {
+                                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                            "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                                                                            "choiceSettingValue": {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                "children": [],
+                                                                                "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_0"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_deny"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+                                                                "choiceSettingCollectionValue": [
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_1"
+                                                                    },
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_2"
+                                                                    },
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_4"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "value": "{6f9df57a-aadb-4b41-9e35-3634dc3857e6}"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+                                                                "choiceSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                    "children": [
+                                                                        {
+                                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                            "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                                                                            "choiceSettingValue": {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                "children": [],
+                                                                                "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_3"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditdenied"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+                                                                "choiceSettingCollectionValue": [
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_1"
+                                                                    },
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_2"
+                                                                    },
+                                                                    {
+                                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                        "children": [],
+                                                                        "value": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_4"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "value": "{6f9df57a-aadb-4b41-9e35-3634dc3857e6}"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "technologies": "mdm",
+    "templateReference": {
+        "templateId": "0f2034c6-3cd6-4ee1-bd37-f3c0693e9548_1"
+    }
+}

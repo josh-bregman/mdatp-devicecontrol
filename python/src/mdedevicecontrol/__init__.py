@@ -3066,10 +3066,12 @@ class CommandLine:
         import platform
 
         if platform.system() == 'Windows':
-            #dc_log_path = repr(dc_log_path)
+            dc_log_path = dc_log_path.replace("\\", "\\\\")
             pass
 
         import logging.config
+
+
         logging.config.fileConfig(dc_config_path,defaults={
             "args":"('"+dc_log_path+"',)"
         })
@@ -3470,7 +3472,10 @@ class CommandLine:
             permissions[WindowsEntryType.FileReadMask] = (row["File Read"] == "X")
             permissions[WindowsEntryType.FileWriteMask] = (row["File Write"] == "X")
             permissions[WindowsEntryType.FileExecuteMask] = (row["File Execute"] == "X")
-            permissions[WindowsEntryType.PrintMask] = (row["Print"] == "X")
+            try:
+                permissions[WindowsEntryType.PrintMask] = (row["Print"] == "X")
+            except:
+                logger.debug("No Print Mask found for entry")
 
             parameters = None
             if "Parameters Match Type" in row:

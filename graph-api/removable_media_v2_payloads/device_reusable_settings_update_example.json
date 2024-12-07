@@ -1,0 +1,78 @@
+{
+    "displayName": "Allowed USBs",
+    "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata",
+    "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata",
+        "groupSettingCollectionValue": [
+            {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                "children": [
+
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_descriptoridlist",
+                        "groupSettingCollectionValue": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                "children": [
+                                    {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_descriptoridlist_name",
+                                        "simpleSettingValue": {
+                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                            "value": "Windows Device Serial Number(6EA9150055800605)"
+                                        }
+                                    },
+                                    {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_descriptoridlist_serialnumberid",
+                                        "simpleSettingValue": {
+                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                            "value": "6EA9150055800605"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_descriptoridlist",
+                        "groupSettingCollectionValue": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                "children": [
+                                    {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_descriptoridlist_name",
+                                        "simpleSettingValue": {
+                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                            "value": "Windows Device Serial Number(1234567890000000)"
+                                        }
+                                    },
+                                    {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_descriptoridlist_serialnumberid",
+                                        "simpleSettingValue": {
+                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                            "value": "1234567890000000"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                        "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_matchtype",
+                        "choiceSettingValue": {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                            "value": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata_matchtype_matchany"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

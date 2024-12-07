@@ -1,0 +1,1293 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationSettings",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET deviceManagement/configurationSettings?$select=accessTypes,applicability",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+            "description": "",
+            "helpText": "",
+            "name": "Entry",
+            "displayName": "Entry",
+            "version": "638689620681089894",
+            "childIds": [
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_computersid"
+            ],
+            "maximumCount": 100,
+            "minimumCount": 1,
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata"
+                }
+            ],
+            "dependedOnBy": [
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+                    "required": true
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+                    "required": true
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                    "required": false
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+                    "required": true
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
+                    "required": false
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_computersid",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+            "description": "Defines whether to display notification or not.",
+            "helpText": "",
+            "name": "Options",
+            "displayName": "Options",
+            "version": "638689620681089894",
+            "defaultOptionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_0",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "options": [
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_0",
+                    "description": "",
+                    "helpText": null,
+                    "name": "None",
+                    "displayName": "None",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 0
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_allow",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        },
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_deny",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        },
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditallowed",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        },
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditdenied",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_1",
+                    "description": "",
+                    "helpText": null,
+                    "name": "ShowNotification",
+                    "displayName": "Show notification",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 1
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditdenied",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_2",
+                    "description": "",
+                    "helpText": null,
+                    "name": "SendEvent",
+                    "displayName": "Send event",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 2
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditallowed",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        },
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditdenied",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_3",
+                    "description": "",
+                    "helpText": null,
+                    "name": "SendNotificationAndEvent",
+                    "displayName": "Send notification and event",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 3
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditdenied",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options_4",
+                    "description": "",
+                    "helpText": null,
+                    "name": "Disable",
+                    "displayName": "Disable",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 4
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_allow",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        },
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_deny",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type"
+                        }
+                    ],
+                    "dependedOnBy": []
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+            "description": "Defines the action for the removable storage groups in IncludedIDList\nEnforcement: Allow or Deny\nAudit: AuditAllowed or AuditDenied",
+            "helpText": "",
+            "name": "Type",
+            "displayName": "Type",
+            "version": "638689620681089894",
+            "defaultOptionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_allow",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "options": [
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_allow",
+                    "description": null,
+                    "helpText": null,
+                    "name": "Allow",
+                    "displayName": "Allow",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Allow"
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": [
+                        {
+                            "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_deny",
+                    "description": null,
+                    "helpText": null,
+                    "name": "Deny",
+                    "displayName": "Deny",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "Deny"
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": [
+                        {
+                            "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditallowed",
+                    "description": null,
+                    "helpText": null,
+                    "name": "AuditAllowed",
+                    "displayName": "Audit Allowed",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "AuditAllowed"
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": [
+                        {
+                            "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type_auditdenied",
+                    "description": null,
+                    "helpText": null,
+                    "name": "AuditDenied",
+                    "displayName": "Audit Denied",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": "AuditDenied"
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": [
+                        {
+                            "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_options",
+                            "required": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
+            "description": "",
+            "helpText": "",
+            "name": "Name",
+            "displayName": "Name",
+            "version": "638689620681089894",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "valueDefinition": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                "format": "none",
+                "inputValidationSchema": null,
+                "maximumLength": 1024,
+                "minimumLength": 0,
+                "isSecret": false,
+                "fileTypes": []
+            },
+            "defaultValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                "settingValueTemplateReference": null,
+                "value": null
+            },
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata"
+                }
+            ],
+            "dependedOnBy": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "description": "",
+            "helpText": "",
+            "name": "ruleid",
+            "displayName": "ID",
+            "version": "638689620681089894",
+            "childIds": [
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata"
+            ],
+            "maximumCount": 100,
+            "minimumCount": 1,
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "dependentOn": [],
+            "dependedOnBy": [
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist",
+            "description": "The group(s) that the policy will not be applied to.",
+            "helpText": "",
+            "name": "ExcludedIdList",
+            "displayName": "Excluded ID",
+            "version": "638689620681089894",
+            "childIds": [
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist_groupid"
+            ],
+            "maximumCount": 100,
+            "minimumCount": 1,
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata"
+                }
+            ],
+            "dependedOnBy": [
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist_groupid",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
+            "description": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
+            "helpText": "",
+            "name": "Sid",
+            "displayName": "Sid",
+            "version": "638689620681089894",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "valueDefinition": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                "format": "none",
+                "inputValidationSchema": null,
+                "maximumLength": 1024,
+                "minimumLength": 0,
+                "isSecret": false,
+                "fileTypes": []
+            },
+            "defaultValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                "settingValueTemplateReference": null,
+                "value": null
+            },
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                }
+            ],
+            "dependedOnBy": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "none",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_id",
+            "description": "GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting.",
+            "helpText": "",
+            "name": "Id",
+            "displayName": "ID",
+            "version": "638689620681089894",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "valueDefinition": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                "format": "none",
+                "inputValidationSchema": null,
+                "maximumLength": 1024,
+                "minimumLength": 0,
+                "isSecret": false,
+                "fileTypes": []
+            },
+            "defaultValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                "settingValueTemplateReference": null,
+                "value": null
+            },
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata"
+                }
+            ],
+            "dependedOnBy": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist",
+            "description": "The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.",
+            "helpText": "",
+            "name": "IncludedIdList",
+            "displayName": "Included ID",
+            "version": "638689620681089894",
+            "childIds": [
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist_groupid"
+            ],
+            "maximumCount": 100,
+            "minimumCount": 1,
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata"
+                }
+            ],
+            "dependedOnBy": [
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist_groupid",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+            "description": "",
+            "helpText": "",
+            "name": "PolicyRule",
+            "displayName": "Policy rule",
+            "version": "638689620681089894",
+            "childIds": [
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_id",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist",
+                "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+            ],
+            "maximumCount": 1,
+            "minimumCount": 1,
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}"
+                }
+            ],
+            "dependedOnBy": [
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_id",
+                    "required": true
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
+                    "required": true
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist",
+                    "required": false
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist",
+                    "required": false
+                },
+                {
+                    "dependedOnBy": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+            "description": "Defines the access.",
+            "helpText": "",
+            "name": "AccessMask",
+            "displayName": "Access mask",
+            "version": "638689620681089894",
+            "defaultOptionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_1",
+            "maximumCount": 100,
+            "minimumCount": 0,
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "options": [
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_1",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_READ_ACCESS",
+                    "displayName": "Read",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 1
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_2",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_WRITE_ACCESS",
+                    "displayName": "Write",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 2
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_4",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_EXECUTE_ACCESS",
+                    "displayName": "Execute",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 4
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_8",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_FS_READ_ACCESS",
+                    "displayName": "File read",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 8
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_16",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_FS_WRITE_ACCESS",
+                    "displayName": "File write",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 16
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_32",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_FS_EXECUTE_ACCESS",
+                    "displayName": "File execute",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 32
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "itemId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask_64",
+                    "description": "",
+                    "helpText": null,
+                    "name": "WDD_PRINT_ACCESS",
+                    "displayName": "Print",
+                    "optionValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": 64
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                            "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                        }
+                    ],
+                    "dependedOnBy": []
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "none",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+            "description": "One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.",
+            "helpText": "",
+            "name": "Id",
+            "displayName": "ID",
+            "version": "638689620681089894",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "valueDefinition": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                "format": "none",
+                "inputValidationSchema": null,
+                "maximumLength": 1024,
+                "minimumLength": 0,
+                "isSecret": false,
+                "fileTypes": []
+            },
+            "defaultValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                "settingValueTemplateReference": null,
+                "value": null
+            },
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                }
+            ],
+            "dependedOnBy": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+            "accessTypes": "add,delete,get,replace",
+            "keywords": [
+                "Defender",
+                "DeviceControl",
+                "Device Control"
+            ],
+            "infoUrls": [
+                "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+            ],
+            "baseUri": "./device/vendor/msft/defender",
+            "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+            "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+            "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+            "settingUsage": "configuration",
+            "uxBehavior": "default",
+            "visibility": "template",
+            "id": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_computersid",
+            "description": "Local computer Sid or computer Sid group or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.",
+            "helpText": "",
+            "name": "ComputerSid",
+            "displayName": "Computer Sid",
+            "version": "638689620681089894",
+            "applicability": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                "description": null,
+                "platform": "windows10",
+                "deviceMode": "none",
+                "technologies": "mdm,microsoftSense",
+                "configurationServiceProviderVersion": "1.3",
+                "maximumSupportedVersion": null,
+                "minimumSupportedVersion": "10.0.18362",
+                "windowsSkus": [
+                    "windowsEnterprise",
+                    "windowsProfessional",
+                    "windowsHome",
+                    "unknown",
+                    "windowsEducation",
+                    "windowsMultiSession",
+                    "surfaceHub",
+                    "iotEnterprise",
+                    "windowsCloudN",
+                    "windows11SE"
+                ],
+                "requiresAzureAd": false,
+                "requiredAzureAdTrustType": "none"
+            },
+            "occurrence": {
+                "minDeviceOccurrence": 1,
+                "maxDeviceOccurrence": 1
+            },
+            "referredSettingInformationList": [],
+            "valueDefinition": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                "format": "none",
+                "inputValidationSchema": null,
+                "maximumLength": 1024,
+                "minimumLength": 0,
+                "isSecret": false,
+                "fileTypes": []
+            },
+            "defaultValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                "settingValueTemplateReference": null,
+                "value": null
+            },
+            "dependentOn": [
+                {
+                    "dependentOn": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
+                    "parentSettingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry"
+                }
+            ],
+            "dependedOnBy": []
+        }
+    ]
+}
